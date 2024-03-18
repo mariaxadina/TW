@@ -1,0 +1,66 @@
+#grid-program {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    grid-template-areas: "refresh refresh refresh"
+        "produse retete retete"
+        "produse retete retete"
+        "contact contact contact";
+
+    margin: 20px;
+}
+
+html {
+    padding: 0 100px;
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+}
+
+#grid-program>* {
+    outline: 2px solid #2E3949;
+    padding: 20px;
+}
+
+#refresh {
+    grid-area: refresh;
+}
+
+#refresh p {
+    font-size: 16px;
+
+}
+
+#produse {
+    grid-area: produse;
+}
+
+#produse p {
+    padding-left: 50px;
+    margin: 0;
+}
+
+#retete {
+    grid-area: retete;
+}
+
+#contact {
+    grid-area: contact;
+}
+
+@media screen and (max-width: 1200px) {
+    #grid-produse {
+        display: block;
+    }
+
+    html {
+        font-size: 12px;
+    }
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}

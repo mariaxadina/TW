@@ -20,7 +20,15 @@
   <meta name="msapplication-config" content="./resurse/favicon/browserconfig.xml">
   <meta name="theme-color" content="#ffffff">
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+
+  <script src="https://kit.fontawesome.com/c2bbd65096.js" crossorigin="anonymous"></script>
+
   <link rel="stylesheet" href="resurse/css/stil.css">
+  <link rel="stylesheet" href="resurse/css/layout.css">
 
 </head>
 
@@ -29,6 +37,11 @@
   <header>
     <h1 style="margin: 0;">ReFresh</h1>
     <nav>
+      <div class="hamburgher-container">
+        <div class="hamburgher-bar"></div>
+        <div class="hamburgher-bar"></div>
+        <div class="hamburgher-bar"></div>
+      </div>
       <ul>
         <li>Acasa
           <ul>
@@ -48,7 +61,7 @@
         </li>
         <li>Retete
           <ul>
-            <li><a href="#retete">Retete</a></li>
+            <li><a href="#retete">Rețete</a></li>
           </ul>
         </li>
         <li>Contact
@@ -62,212 +75,271 @@
   </header>
 
   <main>
-    <section id="refresh">
-      <h2>De ce ReFresh?</h2>
-      <div class="spatiere">
-        <p>ReFresh este site-ul nostru dedicat alimentelor proaspete si sanatoase! Suntem incantati sa-ti
-          prezentam o gama diversificata de produse de cea mai inalta calitate. Punem accent pe calitate, prospetime si
-          accesibilitate pentru a aduce in gospodaria ta tot necesarul pentru a-ti prepara retetele tale favorite cu
-          doar cateva <i>click-uri</i>.</p>
-        <p>La noi vei găsi o varietate de produse selectate cu grijă, provenind de la producători locali și de
-          încredere, pentru a-ți oferi cea mai
-          bună experiență culinară. Ne preocupăm de fiecare detaliu, de la procesul de selecție a produselor până la
-          livrarea acestora la ușa ta.</p>
-        <p>Tu alegi <abbr title="ReFresh">RF</abbr> si noi te alegem pe tine!</p>
-      </div>
-      
-      <figure class="foodimg">
-        <picture>
-          <source srcset="resurse/imagini/food-spread.jpg" media="(max-width: 700px)" />
-          <source srcset="resurse/imagini/Food-Plating.jpg" media="(max-width: 1200px)" />
-          <img src="resurse/imagini/food.jpg" alt="text" title="Retete" />
-        </picture>
-        <figcaption><i>Produse alimentare sanatoase</i></figcaption>
-      </figure>
-
-
-      <span>
-        <abbr title="ReFresh">RF</abbr> aduce in gospodaria ta cele mai calitative ingrediente cu care iti poti prepara
-        cele mai bune mese sanatoase.
-      </span>
-    </section>
-
-    <section id="fructesilegume">
-      <h2>Fructe si Legume</h2>
-      <section>
-        <span>Vezi acum gama noastra de produse <b>BIO</b> de la <b>producatori locali</b>!</span>
-      </section>
-    </section>
-
-    <section id="carnesipeste">
-      <h2>Carne si Peste</h2>
-      <section>
-        <span>Vezi acum gama noastra de produse <b>BIO</b> de la <b>producatori locali</b>!</span>
-      </section>
-    </section>
-
-    <section id="lactatesioua">
-      <h2>Lactate si Oua</h2>
-      <section>
-        <span>Vezi acum gama noastra de produse <b>BIO</b> de la <b>producatori locali</b>!</span>
-      </section>
-    </section>
-
-    <section id="produsevegane">
-      <h2>Produse Vegane</h2>
-      <section>
-        <span>Vezi acum gama noastra de produse <b>BIO</b> de la <b>producatori locali</b>!</span>
-      </section>
-    </section>
-
-
-    <section id="bauturi">
-      <h2>Bauturi</h2>
-      <section>
-        <span>Vezi acum gama noastra de produse <b>BIO</b> de la <b>producatori locali</b>!</span>
-      </section>
-    </section>
-
-    <section id="congelate">
-      <h2>Congelate</h2>
-      <section>
-        <span>Vezi acum gama noastra de produse <b>BIO</b> de la <b>producatori locali</b>!</span>
-      </section>
-    </section>
-
-    <section id="mezeluri">
-      <h2>Mezeluri</h2>
-      <section>
-        <span>Vezi acum gama noastra de produse <b>BIO</b> de la <b>producatori locali</b>!</span>
-      </section>
-    </section>
-
-    <section id="retete">
-      <h2>Retete</h2>
-      <section>
-        <h3>Tacos cu cartof dulce si avocado</h3>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/uH4FHbeg-Ps?si=QmrJe9SEAhAek8Hq"
-          title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;
-            web-share" allowfullscreen></iframe><br>
-        <div class="taburi-iframe">
-          <a href="https://www.youtube.com/embed/uH4FHbeg-Ps?si=QmrJe9SEAhAek8Hq" target="ifr-video">Mergi catre
-            video</a>
+    <div id="grid-program">
+      <section id="refresh">
+        <div class="refresh-stg">
+          <h2>De ce ReFresh?</h2>
+          <div class="spatiere">
+            <p>ReFresh este site-ul nostru dedicat alimentelor proaspete si sanatoase! Suntem incantati sa-ti
+              prezentam o gama diversificata de produse de cea mai inalta calitate. Punem accent pe calitate, prospetime
+              si
+              accesibilitate pentru a aduce in gospodaria ta tot necesarul pentru a-ti prepara retetele tale favorite cu
+              doar cateva <i>click-uri</i>.</p>
+            <p>La noi vei găsi o varietate de produse selectate cu grijă, provenind de la producători locali și de
+              încredere, pentru a-ți oferi cea mai
+              bună experiență culinară. Ne preocupăm de fiecare detaliu, de la procesul de selecție a produselor până la
+              livrarea acestora la ușa ta.</p>
+            <p>Tu alegi <abbr title="ReFresh">RF</abbr> si noi te alegem pe tine!</p>
+          </div>
+          <span>
+            <abbr title="ReFresh">RF</abbr> aduce in gospodaria ta cele mai calitative ingrediente cu care iti poti
+            prepara
+            cele mai bune mese sanatoase.
+          </span>
         </div>
-        <br>
-        <p><b>Ingrediente:</b></p>
-        <ul>
-          <li>150 g Faina(de porumb)</li>
-          <li>Sare</li>
-          <li>300 ml Apa </li>
-          <li>160 g Faina alba de grau</li>
-          <li>500 g Cartofi dulci</li>
-          <li>Ulei</li>
-          <li>Piper</li>
-          <li>Chilli fulgi</li>
-          <li>Oregano</li>
-          <li>41 g Ceapa rosie</li>
-          <li>1 bucata Ardei capia</li>
-          <li>1 bucata Morcov</li>
-          <li>6 bucati Rosii cherry</li>
-          <li>1 bucata Avocado</li>
-          <li>0,5 bucati Ardei capia</li>
-          <li>1 bucata Ardei gras verde</li>
-          <li>0,5 bucati Zeama de lamaie</li>
-          <li>1 legatura Patrunjel</li>
-          <li>Lamaie</li>
-        </ul>
-        <br>
-        <p><b>Mod de preparare</b></p>
-        <span>Intr-un bol, pune faina de porumb, sare si apa. Amesteca si apoi adauga faina.
-          Incorporeaza cu mana pana se obtine un aluat. Lasa sa se odihneasca 20-30 de minute.
-          Dupa cele 20-30 de minute, portioneaza aluatul in 10 parti egale si, din fiecare parte formeaza 10 bile.
-          Intinde fiecare bila intre 2 folii alimentare, formand astfel tortilla.
-          Pune o tigaie antiaderenta pe foc, desprinde fiecare foaie de tortilla si coace-o pe ambele parti.
-          Spala, curata, taie cubulete cartoful dulce si pune-l intr-un bol. Adauga ulei, sare, piper, fulgi de chili,
-          oregano si amesteca.
-          Pregateste o tava tapetata cu hartie de copt si adauga cartofii cubulete, condimentati.
-          Da tava la cuptor, in cuptorul preincalzit, la 180 °C, timp de 25 -30 minute.
-          Pune o tigaie pe foc, adauga ulei, ceapa rosie si 1 ardei kapia.
-          Amesteca, asezoneaza cu sare, piper si fulgi de chili.
-          Adauga morcovul ras si rosiile cherry taiate marunt, amesteca si mai lasa pe foc timp de 2, 3 minute.
-          Pentru salsa, taie cubulete avocado si pune-l intr-un bol.
-          Adauga jumatate de ardei kapia taiat cubulete, ceapa rosie taiata marunt, ardeiul verde taiat cubulete, sare,
-          piper, fulgi de chili, zeama de la ½ lamaie si amesteca.
-          La final se presara o patrunjelul tocat marunt.
-          Pe tortilla pregatita se adauga cartof dulce copt, 2 lingurite de umplutura de ceapa, ardei, morcov si rosii
-          cherry si 2 lingurite de salsa. </span><br><br>
-        <span><b>Pofta buna!</b></span><br>
-        <span>Fa <a href="fisier.pdf" download><i>click</i></a> pentru a descarca reteta.</span>
 
-        <h3>Pui manastiresc</h3>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/E0hkLMCHpDg?si=jvrhLCedCB6ttZTN"
-          title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; 
-              clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-        <div class="taburi-iframe">
-          <a href="https://www.youtube.com/embed/E0hkLMCHpDg?si=jvrhLCedCB6ttZTN" target="ifr-video">Mergi catre
-            video</a>
-        </div>
-        <br>
-        <p><b>Ingrediente:</b></p>
-        <ul>
-          <li>500 g ciuperci</li>
-          <li>un pui</li>
-          <li>300 g afumatura </li>
-          <li>2 oua</li>
-          <li>2 cepe tocate marunt</li>
-          <li>400 g smantana</li>
-          <li>4 lingurite de ulei</li>
-          <li>1/2 legatura patrunjel</li>
-          <li>1/2 legatura marar</li>
-          <li>1 lingura boia dulce</li>
-          <li>1 lingura cimbru</li>
-          <li>sare</li>
-          <li>piper</li>
-        </ul>
-        <br>
-        <p><b>Mod de preparare</b></p><br>
-        <span>Reteta de pui manastiresc e simpla. Se rumenesc toate ingredientele si se fierbe carnea pe jumatate.
-          Se transfera totul intr-o tava pentru cuptor iar deasupra se toarna sosul de smantana. Puiul nu trebuie sa
-          stea
-          prea mult la cuptor si doar cat se rumeneasca usor, iar sosul sa se ingroase putin, cat sa fie gatite ouale.
-          Totusi,
-          aveti grija ca sosul sa ramana lichid in interior, sub pelicula rumenita. Serviti acest pui manastiresc cu
-          mamaliguta calda sau cu cartofi ori orez. Este demential! Pentru o alta reteta delicioasa cu pui, incercati si
-          supa de pui cu taietei de casa.
-          O sa va aminteasca de copilarie!</span><br><br>
-        <span><b>Pofta buna!</b></span><br>
-        <span>Fa <a href="fisier.pdf" download><i>click</i></a> pentru a descarca reteta.</span>
-      </section>
-    </section>
+        <div class="refresh-dr">
+          <figure class="foodimg">
+            <picture>
+              <source srcset="resurse/imagini/food-spread.jpg" media="(max-width: 700px)" />
+              <source srcset="resurse/imagini/Food-Plating.jpg" media="(max-width: 1200px)" />
+              <img src="resurse/imagini/food.jpg" alt="text" title="Retete" />
+            </picture>
+            <figcaption><i>Produse alimentare sanatoase</i></figcaption>
+          </figure>
 
-    <section id="contact">
-      <h2>Contact</h2>
-      <section class="hartaSectiune">
-        <link rel="stylesheet" href="resurse/css/general.css" type="text/css" />
-        <h3>Sediu</h3>
-        <span>Adresa: <i><a
-              href="https://www.google.com/maps/dir//Strada+Academiei+14,+Bucure%C8%99ti+010014/@44.968222,25.2360916,9z/data=!4m8!4m7!1m0!1m5!1m1!1s0x40b1ff472f372acd:0xb7e6e278a72d3fb4!2m2!1d26.0996322!2d44.4351979?entry=ttu"
-              target="_blank">Strada Academiei nr. 14, București 010014</a></i></span> <br>
-        <span>Locatie</span><br>
-        <div class="harta-locatie">
-          <picture>
-            <img src="resurse/imagini/harta.png" alt="Locatia sediului pe harta">
-            <figcaption><i>Harta sediului</i></figcaption>
-          </picture>
+
+
         </div>
       </section>
-    </section>
+
+
+      <section id="produse">
+        <div id="fructesilegume">
+          <h2>Fructe si Legume</h2>
+          <p>Vezi acum gama noastra de produse <b>BIO</b> de la <b>producatori locali</b>!</p>
+        </div>
+
+        <div id="carnesipeste">
+          <h2>Carne si Peste</h2>
+
+          <p>Vezi acum gama noastra de produse <b>BIO</b> de la <b>producatori locali</b>!</p>
+
+        </div>
+
+        <div id="lactatesioua">
+          <h2>Lactate si Oua</h2>
+
+          <p>Vezi acum gama noastra de produse <b>BIO</b> de la <b>producatori locali</b>!</p>
+
+        </div>
+
+        <div id="produsevegane">
+          <h2>Produse Vegane</h2>
+
+          <p>Vezi acum gama noastra de produse <b>BIO</b> de la <b>producatori locali</b>!</p>
+
+        </div>
+
+
+        <div id="bauturi">
+          <h2>Bauturi</h2>
+
+          <p>Vezi acum gama noastra de produse <b>BIO</b> de la <b>producatori locali</b>!</p>
+
+        </div>
+
+        <div id="congelate">
+          <h2>Congelate</h2>
+
+          <p>Vezi acum gama noastra de produse <b>BIO</b> de la <b>producatori locali</b>!</p>
+
+        </div>
+
+        <div id="mezeluri">
+          <h2>Mezeluri</h2>
+
+          <p>Vezi acum gama noastra de produse <b>BIO</b> de la <b>producatori locali</b>!</p>
+
+        </div>
+      </section>
+
+
+      <section id="retete">
+        <h2>Rețete</h2>
+        <section>
+          <h3>Tacos cu cartof dulce si avocado</h3>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/uH4FHbeg-Ps?si=QmrJe9SEAhAek8Hq"
+            title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;
+              web-share" allowfullscreen></iframe><br>
+          <div class="taburi-iframe">
+            <a href="https://www.youtube.com/embed/uH4FHbeg-Ps?si=QmrJe9SEAhAek8Hq" target="ifr-video">Mergi catre
+              video</a>
+          </div>
+          <br>
+          <p><b>Ingrediente:</b></p>
+          <ul>
+            <li>150 g Faina(de porumb)</li>
+            <li>Sare</li>
+            <li>300 ml Apa </li>
+            <li>160 g Faina alba de grau</li>
+            <li>500 g Cartofi dulci</li>
+            <li>Ulei</li>
+            <li>Piper</li>
+            <li>Chilli fulgi</li>
+            <li>Oregano</li>
+            <li>41 g Ceapa rosie</li>
+            <li>1 bucata Ardei capia</li>
+            <li>1 bucata Morcov</li>
+            <li>6 bucati Rosii cherry</li>
+            <li>1 bucata Avocado</li>
+            <li>0,5 bucati Ardei capia</li>
+            <li>1 bucata Ardei gras verde</li>
+            <li>0,5 bucati Zeama de lamaie</li>
+            <li>1 legatura Patrunjel</li>
+            <li>Lamaie</li>
+          </ul>
+          <br>
+          <p><b>Mod de preparare</b></p>
+          <span>Intr-un bol, pune faina de porumb, sare si apa. Amesteca si apoi adauga faina.
+            Incorporeaza cu mana pana se obtine un aluat. Lasa sa se odihneasca 20-30 de minute.
+            Dupa cele 20-30 de minute, portioneaza aluatul in 10 parti egale si, din fiecare parte formeaza 10 bile.
+            Intinde fiecare bila intre 2 folii alimentare, formand astfel tortilla.
+            Pune o tigaie antiaderenta pe foc, desprinde fiecare foaie de tortilla si coace-o pe ambele parti.
+            Spala, curata, taie cubulete cartoful dulce si pune-l intr-un bol. Adauga ulei, sare, piper, fulgi de chili,
+            oregano si amesteca.
+            Pregateste o tava tapetata cu hartie de copt si adauga cartofii cubulete, condimentati.
+            Da tava la cuptor, in cuptorul preincalzit, la 180 °C, timp de 25 -30 minute.
+            Pune o tigaie pe foc, adauga ulei, ceapa rosie si 1 ardei kapia.
+            Amesteca, asezoneaza cu sare, piper si fulgi de chili.
+            Adauga morcovul ras si rosiile cherry taiate marunt, amesteca si mai lasa pe foc timp de 2, 3 minute.
+            Pentru salsa, taie cubulete avocado si pune-l intr-un bol.
+            Adauga jumatate de ardei kapia taiat cubulete, ceapa rosie taiata marunt, ardeiul verde taiat cubulete,
+            sare,
+            piper, fulgi de chili, zeama de la ½ lamaie si amesteca.
+            La final se presara o patrunjelul tocat marunt.
+            Pe tortilla pregatita se adauga cartof dulce copt, 2 lingurite de umplutura de ceapa, ardei, morcov si rosii
+            cherry si 2 lingurite de salsa. </span><br><br>
+          <span><b>Pofta buna!</b></span><br>
+          <span>Fa <a href="fisier.pdf" download><i>click</i></a> pentru a descarca reteta.</span>
+
+          <h3>Pui manastiresc</h3>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/E0hkLMCHpDg?si=jvrhLCedCB6ttZTN"
+            title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; 
+                clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          <div class="taburi-iframe">
+            <a href="https://www.youtube.com/embed/E0hkLMCHpDg?si=jvrhLCedCB6ttZTN" target="ifr-video">Mergi catre
+              video</a>
+          </div>
+          <br>
+          <p><b>Ingrediente:</b></p>
+          <ul>
+            <li>500 g ciuperci</li>
+            <li>un pui</li>
+            <li>300 g afumatura </li>
+            <li>2 oua</li>
+            <li>2 cepe tocate marunt</li>
+            <li>400 g smantana</li>
+            <li>4 lingurite de ulei</li>
+            <li>1/2 legatura patrunjel</li>
+            <li>1/2 legatura marar</li>
+            <li>1 lingura boia dulce</li>
+            <li>1 lingura cimbru</li>
+            <li>sare</li>
+            <li>piper</li>
+          </ul>
+          <br>
+          <p><b>Mod de preparare</b></p><br>
+          <span>Rețeta de pui mănăstiresc e simplă. Se rumenesc toate ingredientele și se fierbe carnea pe jumătate.
+            Se transferă totul într-o tavă pentru cuptor iar deasupra se toarnă sosul de smântână. Puiul nu trebuie să
+            stea
+            prea mult la cuptor și doar cât se rumeneasca ușor, iar sosul să se îngroașe puțîn, cât să fie gătite ouăle.
+            Totuși,
+            aveți grijă că sosul să rămână lichid în interior, sub pelicula rumenită. Serviți acest pui mănăstiresc cu
+            mămăliguță caldă sau cu cartofi ori orez. Este demențial! Pentru o altă rețetă delicioasă cu pui, încercați
+            și
+            supă de pui cu tăieței de casă.
+            O să va amintească de copilărie!</span><br><br>
+          <span><b>Pofta buna!</b></span><br>
+          <span>Fa <a href="fisier.pdf" download><i>click</i></a> pentru a descărca rețeta.</span>
+        </section>
+      </section>
+
+      <section id="contact">
+        <h2>Contact</h2>
+        <section class="hartaSectiune">
+          <link rel="stylesheet" href="resurse/css/general.css" type="text/css" />
+          <h3>Sediu</h3>
+          <span>Adresa: <i><a
+                href="https://www.google.com/maps/dir//Strada+Academiei+14,+Bucure%C8%99ti+010014/@44.968222,25.2360916,9z/data=!4m8!4m7!1m0!1m5!1m1!1s0x40b1ff472f372acd:0xb7e6e278a72d3fb4!2m2!1d26.0996322!2d44.4351979?entry=ttu"
+                target="_blank">Strada Academiei nr. 14, București 010014</a></i></span> <br>
+          <span><b>Locație</b></span><br>
+          <div class="harta-locatie">
+            <figure>
+              <picture>
+                <img src="resurse/imagini/harta.png" alt="Locatia sediului pe harta">
+              </picture>
+              <figcaption><i>Hartă</i></figcaption>
+            </figure>
+          </div>
+          <p><span><b>Date de contact</b><br><br>
+              <i class="fa-regular fa-envelope fa-fade"></i> <a href="mailto:refresh@contact.ro"> Mail ReFresh</a>
+              <i class="fa-solid fa-phone fa-fade"></i> <a href="tel:+40725015445"> Telefon</a>
+            </span></p>
+          <p><span><b>Program</b></span></p>
+          <div class="orar">
+            <table id="tab-orar">
+              <thead>
+                <tr>
+                  <th>Zi</th>
+                  <th>Interval</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Luni</td>
+                  <td>9:00 - 17:00</td>
+                </tr>
+                <tr>
+
+                  <td>Marti</td>
+                  <td>10:00 - 18:00</td>
+                </tr>
+                <tr>
+
+                  <td>Miercuri</td>
+                  <td>08:00 - 16:00</td>
+                </tr>
+                <tr>
+
+                  <td>Joi</td>
+                  <td>09:30 - 17:30</td>
+                </tr>
+                <tr>
+
+                  <td>Vineri</td>
+                  <td>08:30 - 16:30</td>
+                </tr>
+              </tbody>
+
+            </table>
+          </div>
+
+        </section>
+      </section>
+    </div>
   </main>
 
   <footer>
     <a href="http://www.google.com" target="_blank">Google</a>
-    <a href="#" title="mergi sus"></a>
-    <p class="intro" style="color: green; text-decoration: underline;">Va multumim pentru vizita!</p>
+    <a href="#" title="Top" id="link-top"><i class="fa-solid fa-arrow-up"></i>
+      <div id="triunghi"></div>
+    </a>
+    <p class="intro" style="color: rgb(203, 196, 196); text-decoration: underline;">Va multumim pentru vizita!</p>
     <address>
       Strada Academiei 14
-      <a href="mailto:refresh@contact.ro">Mail ReFresh</a>
-      <a href="tel:+40725015445">Telefon</a>
-      <p><small>Copyright &copy; <time datetime="2024-03-04">4 martie 2024</time></small></p>
+      <p><small style=" color: rgb(203, 196, 196);">Copyright &copy; <time datetime="2024-03-04">4 martie
+            2024</time></small></p>
     </address>
   </footer>
 

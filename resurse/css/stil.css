@@ -1,10 +1,14 @@
 :root {
-    --primary: #2E3949;
+    --gri: #2E3949;
+    --crem: #EBD6D1;
+    --alb: #ffffff;
+    --negru: #000000;
+    --albastruinchis: #353024;
 }
 
 header {
-    background-color: var(--primary);
-    color: #ffffff;
+    background-color: var(--gri);
+    color: var(--alb);
     text-align: center;
     padding: 0;
     margin: 0;
@@ -12,39 +16,35 @@ header {
 }
 
 body {
-    
-    color: #000000;
+
+    color: var(--negru);
     text-align: justify;
-    background-color: #EBD6D1;
+    background-color: var(--crem);
     margin: 0;
     padding: 0;
 }
 
 footer {
-    background-color: #2E3949;
-    color: aqua;
+    background-color: var(--gri);
+    color: rgb(203, 196, 196);
     text-align: center;
     padding: 0%;
 }
 
-section {
-    padding: 0 100px; // top+bottom left+right
-
-    padding: 0 0 100px 100px; // top right bottom left
-    
-    padding-top: 0;
-    padding-bottom: 0;
-    padding-left: 100px;
-    padding-right: 100px;
+a {
+    color: inherit;
 }
+
 .foodimg {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
+
 .foodimg img {
-    width : 800px;
+    min-width: 500px;
     height: auto;
+    max-width: 800px;
 }
 
 .spatiere {
@@ -53,7 +53,8 @@ section {
 }
 
 .spatiere p {
-    font-size: 20px;
+    /*font-size: 20px;*/
+    font-size: 1.5rem;
 }
 
 .harta-locatie {
@@ -76,8 +77,7 @@ section {
 }
 
 p {
-    color: #353024;
-    /*background-color: aliceblue;*/
+    color: var(--albastruinchis);
 }
 
 nav ul {
@@ -85,6 +85,7 @@ nav ul {
     display: flex;
     justify-content: space-around;
 }
+
 nav ul li ul {
     display: flex;
     gap: 15px;
@@ -93,4 +94,19 @@ nav ul li ul {
 nav ul li a {
     text-decoration: none;
     color: white;
+}
+
+.hamburgher-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+    cursor: pointer;
+    display: none;
+}
+
+.hamburgher-bar {
+    width: 20px;
+    height: 2px;
+    background-color: white;
 }
