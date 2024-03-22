@@ -9,32 +9,35 @@
   line-height: 3rem;
   text-align: center;
   text-decoration: none;
-  /*border:5px solid #3b2207;
-    border-top-color:#3b2207;*/
-  border-radius: 50%;
+  border-radius: 50% 50% 0 0;
   background: #2E3949;
   box-shadow: none;
-  transition: opacity 0.5s ease, transform 1s ease;
+  transition: opacity 300ms ease, transform 300ms ease;
 }
 #link-top:hover {
   opacity: 1;
-  transform: rotatez(360deg);
   box-shadow: 0px 0px 25px #2E3949;
 }
 
 #triunghi {
-  height: 0px;
+  height: 0;
   width: 0;
   display: inline-block;
-  /* border-bottom:1.5rem solid grey;
-    border-left:1rem solid transparent;
-    border-right:1rem solid transparent;*/
+  border-bottom:1.5rem solid grey;
+  border-left:1rem solid transparent;
+  border-right:1rem solid transparent;
   vertical-align: top;
   transform: translateY(30%);
 }
-
+#patrat {
+  height:24px;
+  width: 24px;
+  display: inline-block;
+  background-color: yellow;
+  transform: translateY(60%);
+}
 #triunghi:hover {
-  transform: rotatez(-90deg);
+  transform: width 4em height 4em;
 }
 
 

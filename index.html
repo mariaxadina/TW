@@ -29,6 +29,9 @@
 
   <link rel="stylesheet" href="resurse/css/stil.css">
   <link rel="stylesheet" href="resurse/css/layout.css">
+  <link rel="stylesheet" href="resurse/css/nav.css">
+  <link rel="stylesheet" href="resurse/css/nav700.css">
+  <link rel="stylesheet" href="resurse/css/nav1000.css">
 
 </head>
 
@@ -37,13 +40,20 @@
   <header>
     <h1 style="margin: 0;">ReFresh</h1>
     <nav>
-      <div class="hamburgher-container">
-        <div class="hamburgher-bar"></div>
-        <div class="hamburgher-bar"></div>
-        <div class="hamburgher-bar"></div>
-      </div>
-      <ul>
-        <li>Acasa
+      <label id="hamburger" for="ch-menu">
+        <div class="hamburgher-container">
+          <div class="hamburgher-bar"></div>
+          <div class="hamburgher-bar"></div>
+          <div class="hamburgher-bar"></div>
+        </div>
+      </label>
+      <input id="ch-menu" type="checkbox">
+      <ul class="meniu">
+        <div class="meniu-flex">
+          <li>
+          <div id="acasa-meniu">
+            <span class="fas fa-regular fa-house"></span>
+          </div>
           <ul>
             <li><a href="#refresh">De ce ReFresh?</a></li>
           </ul>
@@ -69,6 +79,7 @@
             <li><a href="#contact">Contact</a></li>
           </ul>
         </li>
+        </div>
       </ul>
     </nav>
 
@@ -107,9 +118,6 @@
             </picture>
             <figcaption><i>Produse alimentare sanatoase</i></figcaption>
           </figure>
-
-
-
         </div>
       </section>
 
@@ -332,14 +340,13 @@
 
   <footer>
     <a href="http://www.google.com" target="_blank">Google</a>
-    <a href="#" title="Top" id="link-top"><i class="fa-solid fa-arrow-up"></i>
+    <a href="#" title="Top" id="link-top">
       <div id="triunghi"></div>
     </a>
     <p class="intro" style="color: rgb(203, 196, 196); text-decoration: underline;">Va multumim pentru vizita!</p>
     <address>
       Strada Academiei 14
-      <p><small style=" color: rgb(203, 196, 196);">Copyright &copy; <time datetime="2024-03-04">4 martie
-            2024</time></small></p>
+      <p><small style=" color: rgb(203, 196, 196);">Copyright &copy; <time datetime="2024-03-04">4 martie 2024</time></small></p>
     </address>
   </footer>
 

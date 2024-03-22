@@ -1,0 +1,69 @@
+.meniu {
+    padding: 0;
+    margin: 0;
+    /* background-color: #1c1c1c; */
+}
+
+
+.meniu-flex {
+    display: flex;
+}
+
+.meniu li {
+    color: white;
+    text-align: left;
+}
+
+.meniu-flex ul li {
+    color: white;
+}
+.meniu-flex ul {
+    display: block;
+}
+.meniu-flex li ul li {
+    color: white;
+    display: block;
+    top: 0;
+    left: 0;
+}
+
+.meniu li,
+.meniu li a {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    text-decoration: none;
+    box-sizing: border-box;
+    transition: all 1s linear;
+    color: white;
+}
+
+.meniu li:hover>div,
+.meniu li:hover>a {
+    color: yellow;
+}
+
+.meniu li:hover>ul {
+    display: flex;
+    flex-direction: column;
+    z-index: 100;
+    align-items: flex-start;
+}
+
+
+.meniu ul {
+    display: none;
+    animation: animatie-submeniu 1s linear 1 forwards;
+}
+
+.meniu ul:hover li {
+    display: block;
+    animation: animatie-submeniu 1s linear 1 forwards;
+}
+
+@keyframes animatie_submeniu {
+    100% {
+        opacity: 1;
+        transform: scaleY(1);
+    }
+}
