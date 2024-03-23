@@ -1,43 +1,57 @@
 #link-top {
-  position: fixed;
-  bottom: 0.7em;
-  opacity: 0.3;
+  position:fixed;
+  bottom: 0.7 em;
+  top: 80%;
   right: 0.3em;
   width: 3rem;
-  box-sizing: border-box;
   height: 3rem;
   line-height: 3rem;
+  box-sizing: border-box;
+  border-radius: 50% 50% 0 0;
+  background: #ecd9d4;
+  opacity: 50%;
+  box-shadow: inset 0 0 10px #2E3949;
   text-align: center;
   text-decoration: none;
-  border-radius: 50% 50% 0 0;
-  background: #2E3949;
-  box-shadow: none;
-  transition: opacity 300ms ease, transform 300ms ease;
+
 }
+
 #link-top:hover {
-  opacity: 1;
-  box-shadow: 0px 0px 25px #2E3949;
+  cursor: pointer;
+  opacity: 90%;
+  transition: opacity 300ms ease;
+}
+
+.sageata:hover #patrat, .sageata:hover #triunghi{
+  transform: scale(1.2);
+  transition: transform 300ms ease;
+}
+/*
+#link-top.sageata:hover {
+  transform: scale(1.2);
+  transition: transform 300ms ease;
+} NU MERGE! */
+
+#patrat {
+  position: fixed;
+  display: inline-block;
+  top: 82.8%;
+  right: 2.4%;
+  width: 6px;
+  height: 6px;
+  border-width: 0 10px 10px 0;
+  background-color: rgb(36, 35, 35);
 }
 
 #triunghi {
-  height: 0;
-  width: 0;
+  position: fixed;
+  top: 81.9%;
+  right: 2%;
   display: inline-block;
-  border-bottom:1.5rem solid grey;
-  border-left:1rem solid transparent;
-  border-right:1rem solid transparent;
+  border-bottom:0.75rem solid rgb(36, 35, 35);
+  border-left:0.5rem solid transparent;
+  border-right:0.5rem solid transparent;
   vertical-align: top;
-  transform: translateY(30%);
-}
-#patrat {
-  height:24px;
-  width: 24px;
-  display: inline-block;
-  background-color: yellow;
-  transform: translateY(60%);
-}
-#triunghi:hover {
-  transform: width 4em height 4em;
-}
+  
 
-
+}
