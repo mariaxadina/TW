@@ -1,13 +1,13 @@
 #grid-program {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
     gap: 20px;
     grid-template-areas: "refresh refresh refresh refresh"
         "tabel tabel intrebari-frecvente intrebari-frecvente"
-        "calendar-evenimente date-utilizator intrebari-frecvente intrebari-frecvente"
-        "lista-utilizatori date-utilizator intrebari-frecvente intrebari-frecvente"
+        "calendar-evenimente date-utilizatori intrebari-frecvente intrebari-frecvente"
+        "lista-utilizatori date-utilizatori intrebari-frecvente intrebari-frecvente"
         "lista-utilizatori anunturi anunturi date-site-server";
-
     margin: 20px;
 }
 
@@ -64,8 +64,8 @@ html {
     grid-area: lista-utilizatori;
 }
 
-#date-utilizator {
-    grid-area: date-utilizator;
+#date-utilizatori {
+    grid-area: date-utilizatori;
 }
 
 #date-site-server {

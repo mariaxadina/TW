@@ -16,9 +16,7 @@ header {
 }
 
 body {
-
     color: var(--negru);
-    text-align: justify;
     background-color: var(--crem);
     margin: 0;
     padding: 0;
@@ -42,9 +40,9 @@ a {
 }
 
 .foodimg img {
-    min-width: 500px;
+    min-width: 400px;
     height: auto;
-    max-width: 800px;
+    max-width: 400px;
 }
 
 .spatiere {
