@@ -1,11 +1,12 @@
 #grid-program {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 20px;
-    grid-template-areas: "refresh refresh refresh"
-        "produse retete retete"
-        "produse retete retete"
-        "contact contact contact";
+    grid-template-areas: "refresh refresh refresh refresh"
+        "tabel tabel intrebari-frecvente intrebari-frecvente"
+        "calendar-evenimente date-utilizator intrebari-frecvente intrebari-frecvente"
+        "lista-utilizatori date-utilizator intrebari-frecvente intrebari-frecvente"
+        "lista-utilizatori anunturi anunturi date-site-server";
 
     margin: 20px;
 }
@@ -45,6 +46,34 @@ html {
 
 #contact {
     grid-area: contact;
+}
+
+#calendar-evenimente {
+    grid-area: calendar-evenimente;
+}
+
+#anunturi {
+    grid-area: anunturi;
+}
+
+#tabel {
+    grid-area: tabel;
+}
+
+#lista-utilizatori {
+    grid-area: lista-utilizatori;
+}
+
+#date-utilizator {
+    grid-area: date-utilizator;
+}
+
+#date-site-server {
+    grid-area: date-site-server;
+}
+
+#intrebari-frecvente {
+    grid-area: intrebari-frecvente;
 }
 
 @media screen and (max-width: 1200px) {

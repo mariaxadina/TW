@@ -13,6 +13,9 @@
   box-shadow: inset 0 0 10px #2E3949;
   text-align: center;
   text-decoration: none;
+  justify-content: center; 
+  align-items: center; 
+  display: flex;
 
 }
 
@@ -22,16 +25,27 @@
   transition: opacity 300ms ease;
 }
 
+#sageata {
+  position: relative;
+  transition: transform 300ms ease;
+  font-size: 45px;
+}
+
+#sageata:hover {
+  transform: scale(1.2);
+}
+/*
+
 .sageata:hover #patrat, .sageata:hover #triunghi{
   transform: scale(1.2);
   transition: transform 300ms ease;
 }
-/*
+
 #link-top.sageata:hover {
   transform: scale(1.2);
   transition: transform 300ms ease;
 } NU MERGE! */
-
+/*
 #patrat {
   position: fixed;
   display: inline-block;
@@ -54,4 +68,4 @@
   vertical-align: top;
   
 
-}
+}*/
