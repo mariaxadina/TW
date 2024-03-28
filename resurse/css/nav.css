@@ -1,69 +1,89 @@
 .meniu {
     padding: 0;
     margin: 0;
-    /* background-color: #1c1c1c; */
-}
-
-
-.meniu-flex {
     display: flex;
-}
+    gap: 5em;
 
-.meniu li {
-    color: white;
-    text-align: left;
-}
-
-.meniu-flex ul li {
-    color: white;
-}
-.meniu-flex ul {
-    display: block;
-}
-.meniu-flex li ul li {
-    color: white;
-    display: block;
-    top: 0;
-    left: 0;
-}
-
-.meniu li,
-.meniu li a {
-    width: 100%;
-    height: 100%;
-    cursor: pointer;
-    text-decoration: none;
-    box-sizing: border-box;
-    transition: all 1s linear;
-    color: white;
-}
-
-.meniu li:hover>div,
-.meniu li:hover>a {
-    color: yellow;
-}
-
-.meniu li:hover>ul {
-    display: flex;
-    flex-direction: column;
-    z-index: 100;
-    align-items: flex-start;
-}
-
-
-.meniu ul {
-    display: none;
-    animation: animatie-submeniu 1s linear 1 forwards;
-}
-
-.meniu ul:hover li {
-    display: block;
-    animation: animatie-submeniu 1s linear 1 forwards;
-}
-
-@keyframes animatie_submeniu {
-    100% {
-        opacity: 1;
-        transform: scaleY(1);
+    ul {
+        display: none;
+        position: absolute;
+        list-style-type: none;
+        align-items: center;
     }
+
+    li {
+        position: relative;
+        cursor: pointer;
+        padding: 1em 0;
+        width: 100%;
+    }
+
+    li:hover>ul {
+        display: flex;
+        flex-direction: column;
+        border: 1px white;
+        margin: 1em 0 0 0;
+        padding: 0;
+        width: 100%;
+        
+    }
+
+    li ul {
+        width: 100%;
+        display: none;
+        position: absolute;
+        /* ca sa il scot din container pe alt layer, sa nu imi deplaseze continutul cand devine vizibil*/
+        width: 15%;
+        background-color: #2E3949;
+    }
+
+    li ul li {
+        letter-spacing: 0px;
+        text-align: center;
+        padding: 1em 0;
+    }
+
+    .underline::before {
+        content: "";
+        position: absolute;
+        right: 0;
+        z-index: 3;
+        bottom: 0;
+        width: 0;
+        height: 4px;
+        background: linear-gradient(to left, white, #2E3949);
+        transition: width 0.5s ease-in, left 0.5s ease-in;
+        
+    }
+
+    .underline:hover::before {
+        width: 100%;
+        right: 0;
+        left: auto;
+    }
+
+    li ul li:hover {
+        background-color: #f0f0f0; 
+         
+    }
+
+    li ul li:hover a {
+        background-color: #f0f0f0; 
+        color: black; 
+    }
+}
+
+
+
+
+#hamburger {
+    display: none;
+}
+
+#ch-menu {
+    display: none;
+}
+
+#acasa-mediu {
+    display: none;
 }
